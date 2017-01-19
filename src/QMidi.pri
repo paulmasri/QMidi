@@ -22,3 +22,7 @@ haiku* {
 	LIBS += -lmidi2
 	SOURCES += $$PWD/OS/QMidi_Haiku.cpp
 }
+
+macx {
+	SOURCES += $$PWD/OS/QMidi_MacOS.cpp
+}
