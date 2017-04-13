@@ -26,3 +26,7 @@ haiku* {
 macx {
 	SOURCES += $$PWD/OS/QMidi_MacOS.cpp
 }
+
+ios {
+        SOURCES += $$PWD/OS/QMidi_iOS.cpp
+}
