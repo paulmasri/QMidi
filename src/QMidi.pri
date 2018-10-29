@@ -8,9 +8,13 @@ SOURCES += $$PWD/QMidiOut.cpp \
 HEADERS += $$PWD/QMidiOut.h \
 	$$PWD/QMidiFile.h
 
-win32 {
+win32&!winrt {
 	LIBS += -lwinmm
 	SOURCES += $$PWD/OS/QMidi_Win32.cpp
+}
+
+winrt {
+        SOURCES += $$PWD/OS/QMidi_WinRT.cpp
 }
 
 linux* {
