@@ -21,7 +21,8 @@ QMap<QString, QString> QMidiOut::devices()
 
 bool QMidiOut::connect(QString outDeviceId)
 {
-	return false;
+    Q_UNUSED(outDeviceId)
+    return false;
 }
 
 void QMidiOut::disconnect()
@@ -30,4 +31,5 @@ void QMidiOut::disconnect()
 
 void QMidiOut::sendMsg(qint32 msg)
 {
+    Q_UNUSED(msg)
 }
