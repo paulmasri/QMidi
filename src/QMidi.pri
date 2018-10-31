@@ -15,6 +15,10 @@ win32&!winrt {
 
 winrt {
         SOURCES += $$PWD/OS/QMidi_WinRT.cpp
+        #Temporarily exclude more QMidi
+        HEADERS -= $$PWD/QMidiFile.h
+        SOURCES -= $$PWD/QMidiOut.cpp \
+                $$PWD/QMidiFile.cpp
 }
 
 linux* {
